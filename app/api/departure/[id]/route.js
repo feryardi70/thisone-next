@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
-import dbConnect from "../db";
-import Departure from "../model.js/departure";
+import dbConnect from "../../db";
+import Departure from "../../model.js/departure";
 
 export async function PUT(request, { params }) {
   const { id } = params;
