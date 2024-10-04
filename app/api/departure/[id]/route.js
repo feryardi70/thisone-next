@@ -18,7 +18,7 @@ export async function PUT(request, { params }) {
   return NextResponse.json({ msg: "successfully edit Departure" }, { status: 200 });
 }
 
-export async function PUT(request, { params }) {
+export async function GET(request, { params }) {
   const { id } = params;
   await dbConnect;
   const departure = await Departure.findOne({ _id: id });
